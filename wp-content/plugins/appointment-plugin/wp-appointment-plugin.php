@@ -22,7 +22,7 @@ function add_my_custom_menu()
         "manage_options", // admin level
         "appointment-view", // page slug
         "custom_admin_view", // call back function
-        "dashicons-calendar-alt", // ixon url
+        "dashicons-calendar-alt", // icon url
         11 // position
     );
 
@@ -113,4 +113,4 @@ register_deactivation_hook(__FILE__, 'custom_plugin_deactivate');
 
 
 // add_shortcode( string $tag, callable $callback )
-add_shortcode('appointment_list_shortcode','custom_admin_view');
+add_shortcode('appointment_list_shortcode', 'custom_admin_view');
